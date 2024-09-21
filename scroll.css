@@ -1,0 +1,96 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.div-scroll-container{
+    background-color: aquamarine;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.scroll-slider{
+    background-color: grey;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.slider1{
+    background-color: rgb(234, 94, 199);
+    /* display: flex; */
+   
+    
+
+}
+
+.right-to-left{
+    display: inline-block;
+    background-color: blue;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    white-space: nowrap;
+    
+    animation:right-left 24s infinite linear;
+   
+}
+
+.right-to-left span{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px;
+    color: #FF7D16;
+}
+
+@keyframes right-left{
+    from{
+        transform: translateX(0%);
+
+    }
+
+    to{
+        transform: translateX(-100%);
+
+    }
+}
+
+
+.slider2{
+    background-color: rgb(2, 2, 2);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.left-to-right{
+    display: inline-block;
+    background-color: rgb(154, 177, 22);
+    margin-left: 20px;
+    white-space: nowrap;
+    
+    animation:left-right 24s infinite linear;
+   
+}
+
+.left-to-right span{
+    font-size: 50px;
+    font-weight: bold;
+    margin: 40px;
+    color: #FF7D16;
+}
+
+@keyframes left-right{
+    from{
+        transform: translateX(-100%);
+
+    }
+
+    to{
+        transform: translateX(0%);
+
+    }
+}

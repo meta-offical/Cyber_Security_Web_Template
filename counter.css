@@ -1,0 +1,33 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.counter-page{
+    background-color: aquamarine;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-container h2{
+    font-size: 80px;
+    color: brown;
+    position:relative
+    
+}
+
+.counter-numbers {
+    
+    margin-bottom: 10px; 
+}
+
+.counter-numbers::after {
+    content: "";
+    display: block;
+    width: 70%;
+    height: 2px; 
+    background-color: #000; 
+    margin: 10px ; 
+}
